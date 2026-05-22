@@ -1,0 +1,22 @@
+{
+  "name": "project-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Showrav-tech/Crreate-1st-Rest-Api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Showrav-tech/Crreate-1st-Rest-Api/issues"
+  },
+  "homepage": "https://github.com/Showrav-tech/Crreate-1st-Rest-Api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
