@@ -1,11 +1,11 @@
 REST API-json
 
-GET/users-List all users
+GET/users-HTML Document Render
 
-GET/users/1-GEt the user with id 1
-GET/users/2-GET thr user with id 2
- POST/users-Create new user
+GET/pi/users/1-GEt the user with id 1
+GET/pi/users/2-GET thr user with id 2
+ POST/pi/users-Create new user
 
- PATCH/users/1-Edit the user with ID 1
+ PATCH/api/users/1-Edit the user with ID 1
 
- DELETE /users/1 - Delete thr User with ID 1
+ DELETE /pi/users/1 - Delete thr User with ID 1
