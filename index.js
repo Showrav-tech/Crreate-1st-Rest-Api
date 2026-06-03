@@ -14,3 +14,8 @@ app.get('/users', (req, res) => {
     `;
     res.send(html);
 });
+
+//REST API
+app.get("/api/user/",(Req,res)=>{
+    return res.json(users);
+});
