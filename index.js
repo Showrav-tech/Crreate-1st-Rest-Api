@@ -16,6 +16,10 @@ app.get('/users', (req, res) => {
 });
 
 //REST API
-app.get("/api/user/",(Req,res)=>{
+app.get("/api/user/",(req,res)=>{
     return res.json(users);
 });
+app.get("/api/users/:id",(req,res)=>{
+
+});
+app.listen(PORT,()=>console.log(`Server Started at PORT 8000`));
