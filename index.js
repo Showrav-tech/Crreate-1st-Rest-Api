@@ -30,8 +30,12 @@ return res.json(user);
 
 app.post('/api/users',(req,res)=>{
 return res.json({status:"Pending"});
+}).delete((res,req)=>{
+    return res.json({status:"Pending"});
 });
 
-
+app.post("/api/users",(req,res)=>{
+    return res.json({status:"pending"});
+});
 
 app.listen(PORT,()=>console.log(`Server Started at PORT 8000`));
