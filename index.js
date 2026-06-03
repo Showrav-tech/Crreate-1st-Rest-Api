@@ -19,20 +19,22 @@ app.get('/users', (req, res) => {
 app.get("/api/user/",(req,res)=>{
     return res.json(users);
 });
-app.get("/api/users/:id",(req,res)=>{
+
+app.route("/api/users/:id").get("/api/users/:id",(req,res)=>{
 const id=Number(req.params.id);
 const user=users.find((user)=>user.id===id);
 return res.json(user);
-});
+}).put((req,res)=>{
+    res.json({status:"Pending"});
+})
+
+
+
+
 app.post('/api/users',(req,res)=>{
 return res.json({status:"Pending"});
 });
 
-app.patch('/api/users:id',(req,res)=>{
-return res.json({status:"Pending"});
-});
-app.delete('/api/users:id',(req,res)=>{
-return res.json({status:"Pending"});
-});
+
 
 app.listen(PORT,()=>console.log(`Server Started at PORT 8000`));
