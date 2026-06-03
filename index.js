@@ -28,9 +28,6 @@ return res.json(user);
     res.json({status:"Pending"});
 })
 
-
-
-
 app.post('/api/users',(req,res)=>{
 return res.json({status:"Pending"});
 });
