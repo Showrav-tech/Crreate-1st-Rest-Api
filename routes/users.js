@@ -17,9 +17,19 @@ age:"24"
 }
 ]
 
-router.get('/',(res,req)=>{
+router.get('/',(req,res)=>{
 
-res.send('Hello');
+res.send(users);
+});
+
+router.post('/',(req,res)=>{
+
+ const user = req.body;
+ users.push(user);
+
+  res.send(`user with the same ${user.firstname} added to the database!`);
+
+
 });
 
 export default router;
