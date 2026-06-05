@@ -2,7 +2,23 @@ import express from 'express';
 
 const router=express.Router();
 
-router.get('/user',(res,req)=>{
+const users =[
+    {
+
+firstname:"John",
+lastname:"Doe",
+age:"25"
+
+},
+{
+   firstname:"John",
+lastname:"Doe",
+age:"24" 
+}
+]
+
+router.get('/',(res,req)=>{
+
 res.send('Hello');
 });
 
