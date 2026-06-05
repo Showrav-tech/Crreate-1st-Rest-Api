@@ -1,9 +1,18 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
-const app=express();
-const PORT=8000;
+const app = express();
+const PORT = 8000;
 
 app.use(bodyParser.json());
+ 
+app.get('/',(req,res)=>{
+  
 
-app.listen(PORT,()=>console.log(`Server is running on port : http://localhost :${PORT}`));
+    res.send('Hello from home page');
+})
+
+
+app.listen(PORT, () => {
+    console.log(`Server is running at http://localhost:${PORT}`);
+});
