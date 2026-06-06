@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/Showrav-tech/Crreate-1st-Rest-Api#readme",
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
